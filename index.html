@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" type="text/css" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>CAV University</title>
+  </head>
+  <body>
+    <nav>
+      <input type="checkbox" id="check" />
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <label class="logo"><a href="#home">Cavendish International</a></label>
+      <ul>
+        <li><a class="active" href="">Home</a></li>
+        <li><a href="">About Us</a></li>
+        <li><a href="">Our Services</a></li>
+        <li><a href="">Our Placement Network</a></li>
+        <li><a href="">Noble Aid</a></li>
+      </ul>
+    </nav>
+    <div class="slideContainer">
+      <div class="mySlides">
+        <img class="img1" src="slide 2 new.webp" alt="slider 1 image" />
+      </div>
+      <div class="mySlides">
+        <img class="img2" src="Slider 1.webp" alt="slider 2 image" />
+      </div>
+      <a class="prev" onclick="plusSlides(-1)">❮</a>
+      <a class="next" onclick="plusSlides(1)">❯</a>
+      <!-- <div class="rotatee">
+            <span class="dot" onclick="currentSlide(1)" ></span>
+            <span class="dot" onclick="currentSlide(2)" ></span>
+        </div> -->
+    </div>
+    <script>
+      let slideIndex = 1;
+      showSlides(slideIndex);
+
+      function plusSlides(n) {
+        showSlides((slideIndex += n));
+      }
+      function currentSlide(n) {
+        showSlides((slideIndex = n));
+      }
+      function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {
+          slideIndex = 1;
+        }
+        if (n < 1) {
+          slideIndex = slides.length;
+        }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+      }
+    </script>
+    <div>
+      <a class="enrollbtn" href="">Enroll Now for the JUNE 2024 Intake</a>
+    </div>
+    <br /><br />
+    <div class="topics">
+      <h1 class="topic1">Invent</h1>
+      <h1 class="topic2">A New You</h1>
+      <h1 class="topic3">with us</h1>
+      <h3 class="topic4">Disruptive Education</h3>
+    </div>
+    <div>
+      <img class="circleImg" src="grp img.webp" alt="group image" />
+    </div>
+    <br /><br />
+    <div>
+      <img class="poster1" src="poster1.webp" alt="" />
+    </div>
+    <br /><br />
+    <div class="cont1">
+      <h2 class="h2heading">Learn English from scratch.</h2>
+      <p class="ph1">
+        Learn everything holding you from being that top level executive. The
+        CEO. Take the first step. The four skills of reading, writing, speaking
+        and listening alone ever took one anywhere. There are more important
+        skills behind a professional. Wanna learn those? Wanna sound an expert
+        in your subject? Wanna learn your subject in English and be a presenter
+        and an effective analyst? Come on. Just tap on the Whats App button. Or
+        just call.
+      </p>
+      <img class="waImg" src="WA image.webp" alt="WhatsApp Image" />
+    </div>
+    <div class="div2">
+      <button class="contactbtn"><a class="contact" href="">Contact</a></button>
+    </div>
+    <br /><br />
+    <div class="goldbg">
+      <pre class="heading4">
+ Transforming Education 
+ Worldwide
+        </pre
+      >
+      <p class="ph4">
+        Cavendish Internatinal's Global Footprint from <b>London </b>to<b>
+          Europe</b
+        >, <b>Sri Lanka</b>, and <b>Nigeria</b>
+      </p>
+    </div>
+    <br /><br />
+    <div class="box">
+      <div class="con1">
+        <img class="cont1Img" src="R.webp" alt="University studing student" />
+        <p>
+          3 JUNE 2023 &nbsp; &nbsp; &nbsp; 3min read &nbsp; &nbsp; &nbsp; 2view
+        </p>
+        <h2>Unlocking Your Potential: The Cavendish Approach to Education</h2>
+
+        <p class="author"><a class="aubtn1" href="">see all</a></p>
+      </div>
+      <div class="con1">
+        <img
+          class="cont1Img"
+          src="walking.webp"
+          alt="University walking student"
+        />
+        <p>
+          3 JUNE 2023 &nbsp; &nbsp; &nbsp;3min read &nbsp; &nbsp; &nbsp; 2view
+        </p>
+        <h2>
+          From Classroom to Real Life: Experiential Learning at Cavendish
+          International
+        </h2>
+        <p class="author"><a class="aubtn1" href="">see all</a></p>
+      </div>
+      <div class="con1">
+        <img
+          class="cont1Img"
+          src="vr.webp"
+          alt="University student using VR Technology"
+        />
+        <p>
+          3 JUNE 2023 &nbsp; &nbsp; &nbsp; 3min read &nbsp; &nbsp; &nbsp; 2view
+        </p>
+        <h2>Revolutionizing Education: A Textbook-Free Learning Environment</h2>
+        <p class="author"><a class="aubtn1" href="">see all</a></p>
+      </div>
+    </div>
+    <div class="formcont">
+      <h2>Stay informed, join our newsletter</h2>
+      <div class="form">
+        <form action="">
+          <label id="formlab" class="emails" for="emailarea">Enter Email</label
+          ><br />
+          <input
+            type="email"
+            name="emailarea"
+            placeholder="email here"
+          /><br /><br />
+          <label id="formlab" class="fnames" for="fname">Enter Full Name</label
+          ><br />
+          <input type="text" placeholder="full name here" /><br />
+          <input class="submitbtn" type="submit" value="subscribe" />
+        </form>
+      </div>
+    </div>
+    <div class="footerbg">
+      <div class="footer">
+        <div class="column">
+          <h1>Branches</h1>
+          <p class="london">London to Europe, Sri Lanka, and Nigeria</p>
+        </div>
+        <div class="column" id="c1">
+          <h1>Services</h1>
+          <p>Book Online</p>
+          <a class="abs" href="#">About Us</a>
+          <p>Our Services</p>
+        </div>
+        <div class="column">
+          <h1>Links</h1>
+          <a href="#">Careers</a>
+          <a href="#">Help & Support</a>
+          <a href="#">Blog</a>
+        </div>
+        <div class="column">
+          <h1>Contact</h1>
+          <a href="#">Download Android App</a>
+          <a href="#">Download IOS App</a>
+          <a href="#">Terms and condition</a>
+        </div>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>© Developed by &nbsp;<a href="www.idizz.site">IDIZZ</a> ❤️️</p>
+    </div>
+  </body>
+</html>
